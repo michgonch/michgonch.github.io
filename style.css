@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 :root {
-  --light-primary: hsl(0, 0%, 80%);
-  --light-secondary: hsl(0, 0%, 95%);
   --dark-primary: hsl(0, 0%, 10%);
+  --light-primary:  hsl(0, 0%, 90%);
   font-family: 'PT Mono', monospace;
   font-size: 12px;
 }
@@ -14,17 +13,17 @@ body, h1, h2, h3, p {
 
 a {
   text-decoration: none;
-  color: var(--dark-primary);
+  color: var(--light-primary);
 }
 
 body {
-  color: var(--dark-primary);
-  background-color: var(--light-primary);
+  color: var(--light-primary);
+  background-color: var(--dark-primary);
 }
 
 main {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   position: relative;
 }
 
@@ -34,17 +33,17 @@ main {
   width: 8rem;
   padding: .5rem;
   border: 1px solid var(--dark-primary);
-  background-color: var(--light-secondary);
-  box-shadow: 0 2px 0.5rem var(--dark-primary);
+  background-color: var(--light-primary);
+  box-shadow: 0 2px 0.5rem var(--light-primary);
   transition: 0.2s;
 }
 
 .link:hover {
-  box-shadow: 0 0 1rem var(--dark-primary);
+  box-shadow: 0 0 1rem var(--light-primary);
 }
 
 .link:active {
-  box-shadow: 0 0 0.2rem var(--dark-primary);
+  box-shadow: 0 0 0.2rem var(--light-primary);
 }
 
 .link img {
@@ -52,9 +51,47 @@ main {
   margin-right: 0.5rem;
 }
 
-.ru-lang {
+.link span {
+  width: 5rem;
+  text-align: center;
+  color: var(--dark-primary)
+}
+
+.lang {
   position: absolute;
-  right: 1rem;
+  top: -.5rem;
+  right: -2rem;
+  transform: scale(.5);
+}
+
+.ru::before {
+  content: "";
+  display: block;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-image: linear-gradient(
+    #fff, #fff 33%,
+    #0039a6 33%, #0039a6 67%,
+    #d52b1e 67%, #d52b1e);
+}
+
+.en::before {
+  content: "";
+  display: block;
+  margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-image: 
+    linear-gradient(
+      90deg,
+      hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 30%,
+      #cd202c 30%, #cd202c 50%, 
+      hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, 0)),
+    linear-gradient(
+      #fff, #fff 40%,
+      #cd202c 40%, #cd202c 60%, 
+      #fff 60%, #fff)
 }
 
 .persona {
@@ -66,19 +103,20 @@ main {
 }
 
 .persona__text {
-  margin-left: -3rem;
+  margin-left: -1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-shadow: 
-    var(--light-primary) 0 0 10px,
-    var(--light-primary) -1px -1px 0,  
-    var(--light-primary) 1px -1px 0,
-    var(--light-primary) -1px 1px 0,
-    var(--light-primary) 1px 1px 0;
+    var(--dark-primary) 0 0 10px,
+    var(--dark-primary) -1px -1px 0,  
+    var(--dark-primary) 1px -1px 0,
+    var(--dark-primary) -1px 1px 0,
+    var(--dark-primary) 1px 1px 0;
 }
 
 .persona__text h1 {
+  max-width: 10ch;
   font-size: 3rem;
 }
 
@@ -89,7 +127,7 @@ main {
 .links {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .about {
@@ -102,18 +140,15 @@ main {
   max-width: 60ch;
 }
 
-.portfolio {
-  padding: 1rem;
-}
-
 .portfolio h2 {
+  margin-left: 2rem;
   font-size: 2rem;
 }
 
 .works {
   margin-top: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -138,18 +173,18 @@ main {
   left: 0;
   width: 16rem;
   height: 16rem;
-  color: var(--light-secondary);
+  color: var(--dark-secondary);
   background-color: hsla(0, 0%, 10%, 0.8);
-  box-shadow: 0 2px 0.4rem var(--dark-primary);
+  box-shadow: 0 2px 0.4rem var(--light-primary);
   transition: 0.2s;
 }
 
 .work a:hover {
-  box-shadow: 0 0 0.8rem var(--dark-primary);
+  box-shadow: 0 0 0.8rem var(--light-primary);
 }
 
 .work a:active {
-  box-shadow: 0 0 0.2rem var(--dark-primary);
+  box-shadow: 0 0 0.2rem var(--light-primary);
 }
 
 .work h3 {

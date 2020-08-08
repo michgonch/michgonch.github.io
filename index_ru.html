@@ -1,41 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>michgonch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
-    <a href="./index_ru.html" class="ru-lang">Русский</a>
+    <a href="./index.html" class="link lang en">
+      <span>English</span>
+    </a>
     <div class="persona">
       <img src="./img/photo.jpg" alt="photo">
-      <h1>Михаил Гончаров</h1>
-      <p>веб-разработчик</p>
+      <div class="persona__text">
+        <h1>Михаил Гончаров</h1>
+        <p>веб-разработчик</p>
+      </div>
     </div>
     <div class="links">
-      <a href="mailto:michgonch@ya.ru" target="_blank"><img src="./img/icons/mail.svg" alt="mail">Email</a>
-      <a href="https://vk.com/michgonch" target="_blank"><img src="./img/icons/vk.svg" alt="vk">Vkontakte</a>
-      <a href="https://github.com/michgonch" target="_blank"><img src="./img/icons/gh.svg" alt="github">Github</a>
+      <a href="mailto:michgonch@ya.ru" target="_blank" class="link">
+        <img src="./img/icons/mail.svg" alt="mail">
+        <span>Email</span>
+      </a>
+      <a href="https://github.com/michgonch" target="_blank" class="link">
+        <img src="./img/icons/gh.svg" alt="github">
+        <span>Github</span>
+      </a>
+      <a href="https://t.me/michgonchar" target="_blank" class="link">
+        <img src="./img/icons/tg.svg" alt="telegram">
+        <span>Telegram</span>
+      </a>
     </div>
     <div class="about">
       <p>
         Мне нравится создавать веб-сайты и React-приложения (JavaScript, HTML и CSS). Имею представление о серверной
         части (Node.js, Linux). Сейчас я стремлюсь к развитию: стать профессионалом в конкретном стеке технологий,
-        работать в команде, решать задачи бизнеса, гордиться качеством и результатом. В дальнейшем я открыт для любых
+        работать в команде, решать задачи бизнеса, гордиться качеством и результатом. В дальнейшем, я открыт для любых
         других навыков и технологий, связанных с веб-разработкой.
       </p>
     </div>
     <div class="portfolio">
-      <h2>Мои недавние работы</h2>
+      <h2>My recent works</h2>
       <div class="works">
         <div class="work">
           <img src="./img/works/gof.jpg" alt="gallery page">
           <a href="https://galleryonfire.vercel.app/" target="_blank">
-            <h3>galleryonfire.vercel.app</h3>
+            <h3>Gallery on Fire</h3>
             <p>
               Общедоступная галерея изображений. Приложение создано на React, анимировано с Framer, размещено на
               Firebase.
@@ -45,7 +61,10 @@
         <div class="work">
           <img src="./img/works/chto.jpg" alt="chto page">
           <a href="https://chto.wtf/" target="_blank">
-            Лендинг для летнего фестиваля, включает в себя JQuery слайдер.
+            <h3>chto.wtf</h3>
+            <p>
+              Лендинг для летнего фестиваля, включает в себя JQuery слайдер.
+            </p>
           </a>
         </div>
       </div>
