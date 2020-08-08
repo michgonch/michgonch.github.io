@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+  --light-primary: hsl(0, 0%, 80%);
+  --light-secondary: hsl(0, 0%, 95%);
+  --dark-primary: hsl(0, 0%, 10%);
+  font-family: 'PT Mono', monospace;
+  font-size: 12px;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-primary);
+}
+
+body {
+  color: var(--dark-primary);
+  background-color: var(--light-primary);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  padding: .5rem;
+  border: 1px solid var(--dark-primary);
+  background-color: var(--light-secondary);
+  box-shadow: 0 2px 0.5rem var(--dark-primary);
+  transition: 0.2s;
+}
+
+.link:hover {
+  box-shadow: 0 0 1rem var(--dark-primary);
+}
+
+.link:active {
+  box-shadow: 0 0 0.2rem var(--dark-primary);
+}
+
+.link img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.ru-lang {
+  position: absolute;
+  right: 1rem;
+}
+
+.persona {
+  display: flex;
+}
+.persona img {
+  width: 10rem;
+  object-fit: contain;
+}
+
+.persona__text {
+  margin-left: -3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-shadow: 
+    var(--light-primary) 0 0 10px,
+    var(--light-primary) -1px -1px 0,  
+    var(--light-primary) 1px -1px 0,
+    var(--light-primary) -1px 1px 0,
+    var(--light-primary) 1px 1px 0;
+}
+
+.persona__text h1 {
+  font-size: 3rem;
+}
+
+.persona__text p {
+  font-size: 2rem;
+}
+
+.links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.about p {
+  margin: 0 auto;
+  max-width: 60ch;
+}
+
+.portfolio {
+  padding: 1rem;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+}
+
+.works {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.work {
+  margin: 1rem;
+  width: 16rem;
+  height: 16rem;
+  position: relative;
+}
+
+.work img {
+  width: 100%;
+}
+
+.work a {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 16rem;
+  color: var(--light-secondary);
+  background-color: hsla(0, 0%, 10%, 0.8);
+  box-shadow: 0 2px 0.4rem var(--dark-primary);
+  transition: 0.2s;
+}
+
+.work a:hover {
+  box-shadow: 0 0 0.8rem var(--dark-primary);
+}
+
+.work a:active {
+  box-shadow: 0 0 0.2rem var(--dark-primary);
+}
+
+.work h3 {
+  text-decoration: underline;
+}
+
+.work p {
+  margin-top: 1rem;
+  width: 14rem;
+}
+
+@media (min-width: 400px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
