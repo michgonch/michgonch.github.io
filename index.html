@@ -4,11 +4,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>michgonch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  My page
+  <main>
+    <a href="./index_ru.html" class="link ru-lang">
+      <span>Русский</span>
+    </a>
+    <div class="persona">
+      <img src="./img/photo.jpg" alt="photo">
+      <div class="persona__text">
+        <h1>Michael Goncharov</h1>
+        <p>web developer</p>
+      </div>
+    </div>
+    <div class="links">
+      <a href="mailto:michgonch@ya.ru" target="_blank" class="link">
+        <img src="./img/icons/mail.svg" alt="mail">
+        <span>Email</span>
+      </a>
+      <a href="https://vk.com/michgonch" target="_blank" class="link">
+        <img src="./img/icons/vk.svg" alt="vk">
+        <span>Vkontakte</span>
+      </a>
+      <a href="https://github.com/michgonch" target="_blank" class="link">
+        <img src="./img/icons/gh.svg" alt="github">
+        <span>Github</span>
+      </a>
+    </div>
+    <div class="about">
+      <p>
+        I enjoy creating websites and React applications (JavaScript, HTML and CSS). I have a grasp of server side
+        (Node.js, Linux). Currently, I am striving to advance: to become professional at definite tech stack, to
+        cooperate in a team, to solve business tasks, to be proud of quality and results.
+        Further, I am open to any other skills and technologies related to Web development.
+      </p>
+    </div>
+    <div class="portfolio">
+      <h2>My recent works</h2>
+      <div class="works">
+        <div class="work">
+          <img src="./img/works/gof.jpg" alt="gallery page">
+          <a href="https://galleryonfire.vercel.app/" target="_blank">
+            <h3>Gallery on Fire</h3>
+            <p>
+              Public image gallery. App is built with React, animated with Framer, backed with Firebase.
+            </p>
+          </a>
+        </div>
+        <div class="work">
+          <img src="./img/works/chto.jpg" alt="chto page">
+          <a href="https://chto.wtf/" target="_blank">
+            <h3>chto.wtf</h3>
+            <p>
+              Landing page for summer festival, includes a JQuery slider.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
